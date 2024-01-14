@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400&display=swap"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-image: url(./bg.png);
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .face-img {
+        position: absolute;
+        height: 600px;
+        bottom: 0px;
+        right: 270px;
+      }
+
+      header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .nav {
+        width: 80%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .icons {
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+      }
+
+      .icon {
+        height: 30px;
+        margin-left: 20px;
+      }
+
+      .btn {
+        background-color: #ab572d;
+        color: #ffffff;
+        font-family: "Poppins", Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        margin-top: 20px;
+        padding: 10px 20px;
+      }
+
+      .heading-text {
+        font-family: "Abril Fatface", Arial, sans-serif;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 47px;
+        letter-spacing: 3px;
+        text-align: left;
+        padding-left: 10px;
+      }
+
+      .mid-col {
+        width: 60%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        align-items: center; /* Align items vertically */
+        justify-content: center; /* Center items horizontally */
+        text-align: center;
+        margin-top: 10%;
+      }
+
+      .text {
+        font-family: "Actor", Arial, sans-serif;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: left;
+        margin-left: -20px;
+        margin-top: 5px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        body {
+          background-image: url(./bg.png);
+          height: 100vh !important;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .nav {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .icons {
+          margin: 0;
+          margin-top: 20px;
+        }
+
+        .icon-first {
+          margin-left: 0px !important;
+        }
+
+        .face-img {
+          height: 300px;
+          right: 5%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <img class="logo" src="./logo.png" alt="Logo" />
+        <div class="icons">
+          <a href="#"
+            ><img
+              class="icon icon-first"
+              src="./MagnifyingGlass.png"
+              alt="Search"
+          /></a>
+          <a href="#"><img class="icon" src="./User.png" alt="Search" /></a>
+          <a href="#"><img class="icon" src="./Heart.png" alt="Search" /></a>
+          <a href="#"><img class="icon" src="./Handbag.png" alt="Search" /></a>
+        </div>
+      </div>
+    </header>
+    <div class="mid-col">
+      <h1 class="heading-text">
+        Discover Your <br />
+        Signature Scent.
+      </h1>
+      <p class="text">Indulge Yourself or Elevate Your Business</p>
+      <button type="button" class="btn">
+        LET’S FIND THE PERFECT AROMA FOR YOU & YOUR CORPORATION.
+      </button>
+    </div>
+    <img class="face-img" src="./face-img.png" alt="Avatar Image" />
+    <script type="text/javascript">
+      (function(d, t) {
+          var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+          v.onload = function() {
+            window.voiceflow.chat.load({
+              verify: { projectID: '65a1aa15bf941c51ef2c5791' },
+              url: 'https://general-runtime.voiceflow.com',
+              versionID: 'production'
+            });
+          }
+          v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+      })(document, 'script');
+    </script>
+  </body>
+</html>
